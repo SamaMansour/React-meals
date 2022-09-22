@@ -8,7 +8,7 @@ const Cart = (props) => {
         ].map((item)=><li>{item.name}</li>)}
     </ul>;
     return (
-      <Modal>
+      <div>
         <div className={classes.cart}>
           {cartItems}
           <div>
@@ -20,7 +20,7 @@ const Cart = (props) => {
             <button className={classes.button}>Order</button>
           </div>
         </div>
-      </Modal>
+      </div>
     );
 };
 
